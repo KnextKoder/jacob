@@ -14,8 +14,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Student Energy",
-  description: "Sustainable Energy for Everyone",
+  title: "Student Energy OAU",
+  description: "Join a passionate community of changemakers driving sustainability and energy innovation at Obafemi Awolowo University. Empower yourself, build your network, and make a real impact.",
+  icons: {
+    icon: "/student enrgy oau logo/STUDENT ENERGY OAU logo.png",
+    apple: "/student enrgy oau logo/STUDENT ENERGY OAU logo.png",
+  },
 };
 
 export default function RootLayout({
@@ -26,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-yellow-100/30`}
       >
         {children}
         <Footer />

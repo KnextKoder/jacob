@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { Button } from "@/components/ui/button";
 // import { Input } from "@/components/ui/input"; // No longer needed
 import { Separator } from "@/components/ui/separator";
@@ -41,7 +42,7 @@ const Footer = () => {
           <div className="py-12 flex flex-col sm:flex-row items-start justify-between gap-x-8 gap-y-10 px-6 xl:px-0">
             <div>
               <p className="font-semibold text-3xl">Student Energy OAU</p>
-              <ul className="mt-6 flex items-center gap-4 flex-wrap">
+              {/* <ul className="mt-6 flex items-center gap-4 flex-wrap">
                 {footerLinks.map(({ title, href }) => (
                   <li key={title}>
                     <Link
@@ -52,7 +53,7 @@ const Footer = () => {
                     </Link>
                   </li>
                 ))}
-              </ul>
+              </ul> */}
             </div>
 
             {/* Join Us Section */}
@@ -86,12 +87,12 @@ const Footer = () => {
               <Link href="mailto:oau@studentenergy.org">
                 <MailIcon className="h-5 w-5" />
               </Link>
-              <Link href="#" target="_blank">
+              {/* <Link href="#" target="_blank">
                 <TwitterIcon className="h-5 w-5" />
               </Link>
               <Link href="#" target="_blank">
                 <GithubIcon className="h-5 w-5" />
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

@@ -2,8 +2,24 @@ import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import { ImageCarousel } from "./image-carousel";
 
 const Hero = () => {
+  const bannerImages = [
+    {
+      src: "/main banner/website frontpage design 1.png",
+      alt: "Student Energy OAU Banner 1"
+    },
+    {
+      src: "/main banner/website frontpage design 2.png", 
+      alt: "Student Energy OAU Banner 2"
+    },
+    {
+      src: "/main banner/website frontpage design 3.png",
+      alt: "Student Energy OAU Banner 3"
+    }
+  ];
+
   return (
     <div className="min-h-screen w-full flex flex-col gap-10 items-center justify-center px-6 py-16">
       <div className="text-center max-w-2xl">
@@ -26,7 +42,10 @@ const Hero = () => {
           </Button>
         </div>
       </div>
-      <div className="w-full max-w-screen-xl mx-auto aspect-video bg-accent rounded-xl" />
+      <ImageCarousel 
+        images={bannerImages}
+        className="w-full max-w-screen-xl mx-auto aspect-video"
+      />
     </div>
   );
 };
